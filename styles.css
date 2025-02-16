@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+/* Navigation Bar */
+.navbar {
+    margin-bottom: 30px;
+    background-color: red !important;
+    color: white ;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+}
+
+.nav-link.active {
+    color: black !important;
+    font-weight: bold;
+}
+
+h1, h3 {
+    color: white;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-color: #e9ecef;
+    padding: 2rem 1rem;
+    border-radius: 0.3rem;
+}
+
+/* Search Form */
+#searchForm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Custom Button Styles */
+.btn-primary {
+    background-color: yellow !important;
+    border: 1px solid black !important;
+    color: black !important;
+    font-weight: bold;
+}
+
+
+/* Pokémon Card */
+.card {
+    margin-top: 20px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Pokémon Details */
+#pokemonName {
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    background-color: #f8f9fa;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.progress-bar {
+    background-color: #0d6efd;
+    transition: width 0.5s ease-in-out;
+}
+
+.stat-item {
+    margin-bottom: 1.5rem;
+}
+
+.stat-item span {
+    color: white;
+    font-weight: bold;
+}
+
+.stat-value {
+    color: yellow;
+}
+
+.progress {
+    height: 1.5rem;
+    background-color: #807d7d;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar[aria-label="HP"] {
+    background-color: #ff5959;
+}
+
+.progress-bar[aria-label="Attack"] {
+    background-color: #f08030;
+}
+
+.progress-bar[aria-label="Defense"] {
+    background-color: #f8d030;
+}
+
+.progress-bar[aria-label="Special Attack"] {
+    background-color: #6890f0;
+}
+
+.progress-bar[aria-label="Special Defense"] {
+    background-color: #78c850;
+}
+
+.progress-bar[aria-label="Speed"] {
+    background-color: #f85888;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 1rem;
+    }
+    
+    #pokemonImage {
+        max-width: 250px;
+    }
+}
+
+/* Pokémon Image */
+#pokemonImage {
+    width: 500px;
+    height: auto;
+}
